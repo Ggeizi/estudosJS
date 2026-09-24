@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Em que país você nasceu?</h1>
+    Digite o seu país de nascimento: <input type="text" name="txtn1" id="txtn1" >
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById('txtn1')
+            var res = window.document.getElementById('res')
+
+
+            if(txtv != 'Brasil'){
+                res.innerHTML = 'Você é estrangeiro!'
+            } else {
+                res.innerHTML = 'Você é Brasileiro!'
+            }
+        }
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Olá! Bom dia!</h1>
+    <script>
+        var nome = window.prompt("Olá! Qual é o seu nome?")
+       
+        var n = Number(window.prompt("Digite seu salário das duas primeiras semanas: "))
+        var n1 = Number(window.prompt("Digite seu salário das duas ultimas semanas: "))
+        var s = n + n1
+        var s1 = (n + n1)/4
+        //s.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})
+        //s1.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})
+        window.alert(`Seu salário é igual a ${s}`)
+        document.writeln(`Seja bem-vindo ${nome}, seu nome tem ${nome.length} letras.`)
+        document.write(`Seu nome em upperCase é ${nome.toUpperCase()}`)
+        document.write(`Seu salário semanal é igual a ${s1}`)
+    </script>
+</body>
+</html>
